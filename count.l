@@ -6,7 +6,7 @@
 %}
 %%
 
-"int"|"float"|"return"|"if"|"else"|"switch"|"break" {
+"int"|"float"|"return"|"if"|"else"|"switch"|"break"|"include" {
    
     key++; }
 
