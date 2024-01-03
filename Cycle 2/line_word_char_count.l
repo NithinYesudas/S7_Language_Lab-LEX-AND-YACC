@@ -6,7 +6,7 @@ int flag = 0;
 extern FILE *yyin;
 %}
 %%
-\n {l++;if(flag ==1){w++;flag=0;}}
+\n {l++;if(flag == 1){w++;flag=0;}}
 [a-zA-Z] {flag =1;c++;}
 " " {if(flag ==1){w++;flag=0;}}
 . {c++;}
