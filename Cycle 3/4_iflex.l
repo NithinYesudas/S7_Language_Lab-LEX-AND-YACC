@@ -2,6 +2,10 @@
 #include "y.tab.h"
 %}
 %%
+
+\n ;
+"\t" ;
+" "+ ;
 if {return IF;}
 else {return ELSE;}
 == |
@@ -10,9 +14,7 @@ else {return ELSE;}
 "<" {return REL;}
 [a-z]+ {return ID;}
 [0-9]+ {return NUM;}
-\n {return NL;}
-"\t"+ ;
-" "+ ;
+
 . {return yytext[0];}
 %%
 int yywrap(){
